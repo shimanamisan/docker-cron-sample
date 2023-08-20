@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: docker-cron-sample-backend
+    build:
+      context: ./php
+      dockerfile: ./Dockerfile
+    image: docker-cron-sample-backend:1.0
+    volumes:
+      - ../:/workspace:cached
